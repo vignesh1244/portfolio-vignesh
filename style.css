@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+ }
+ .head-section{
+  text-transform: uppercase;
+  border-style: outset;
+  color:white
+  
+ }
+
+  header{
+    height: 100px;
+    max-width: auto;
+    padding: 3px;
+    background-color: rgba(3, 3, 3, 0.5);
+    padding:2px;
+    text-align:center;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  .menu{
+    float: center;
+    padding-top: 25px;
+  }
+  ul li{
+    list-style:none;
+    display: inline-block;
+    line-height:25px;
+  }
+   .menu ul li a{
+      text-decoration: none;
+      font-family: arial;
+      color:white;
+      padding:  5px 25px;
+      
+    }
+     .menu ul li a:hover{
+    
+      color: rgb(0, 252, 13);
+      box-shadow: 0 0 5px rgb(221, 221, 224);
+      transition: all .5s ease;
+      padding: 8px 25px;
+    }
+
+
+    /******home section ******************/
+  
+    #home{
+      display: flex;
+      flex-direction: column;
+      height:840px;
+      border: 4px solid rgb(0, 0, 0);
+      align-items: center;
+      justify-content: center;
+      color:white
+      
+
+    }
+    .images img{
+      height: 200px;
+      width:200px;
+      align-items:center;
+      position:absolute;
+      top:25%;
+      left:10%;
+      
+      
+    }
+    #home::before{
+      content: "";
+      position:absolute;
+      top:0px;
+      right: 0px; 
+      background: url('image/sbg.jpg') no-repeat center center/cover;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: .8;
+    }
+   
+     
+    .btn{
+      padding:10px;
+      background-color:transparent;
+      color:whitesmoke;
+      outline:none;
+      transition: 0 0 5px white;
+      font-weight:bold;
+      
+    }
